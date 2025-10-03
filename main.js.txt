@@ -1,0 +1,29 @@
+const { app, BrowserWindow } = require('electron')
+
+function createWindow () {
+  const win = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      nodeIntegration: true
+    }
+  })
+
+  // Load the built application
+  win.loadFile('dist/index.html')
+}
+
+// Create window when Electron is ready
+app.whenReady().then(() => {
+  createWindow()
+
+  // Open new window when clicking on dock icon (macOS)
+  app.on('activate', function () {
+    if (BrowserWindow.getAllWindows().length === 0) createWindow()
+  })
+})
+
+// Quit when all windows are closed
+app.on('quit', function () {
+  app.quit()
+})
