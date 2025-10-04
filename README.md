@@ -52,3 +52,4 @@ Navigate to `http://localhost:5173` after starting the development server to use
 ## License
 
 This project is open source and available under the MIT License.
+This project is open source and available under the MIT License.
