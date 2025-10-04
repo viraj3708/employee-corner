@@ -1,5 +1,7 @@
 # Payslip Calculator
 
+[![Deploy to GitHub Pages](https://github.com/viraj3708/employee-corner/actions/workflows/deploy.yml/badge.svg)](https://github.com/viraj3708/employee-corner/actions/workflows/deploy.yml)
+
 A comprehensive financial calculator suite built with React that includes various calculators for employees and general financial planning.
 
 ## Features
